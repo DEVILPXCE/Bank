@@ -31,8 +31,8 @@ private:
 class Bank
 {
 public:
-	Bank();//构造函数，涉及文件系统,暂时跳过
-	~Bank();//析构函数，涉及文件系统，暂时跳过
+	Bank();//构造函数，涉及文件系统
+	~Bank();//析构函数，涉及文件系统,delete[]U;
 	void login();//涉及工作人员信息
 	bool loginIsRight();
 	void startwork();
@@ -48,6 +48,7 @@ public:
 
 private:
 	int N;
-	User users[userN];//！！！改为动态数组
+	//User users[userN];//！！！改为动态数组
+	User *U = new User[N];
 
 };
