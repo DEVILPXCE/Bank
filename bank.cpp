@@ -40,12 +40,9 @@ void Bank::login()
 
 	 int i;
 
-	 while (!infile.eof())//若文件读入成功
+	 while (!infile.eof())
 	 {
-		 infile >> acc;
-		 nm = infile.get();
-
-
+		 //infile >> 
 	 };
 
 
