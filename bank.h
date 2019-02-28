@@ -48,6 +48,8 @@ public:
 
 private:
 	int N;
-	User users[userN];//！！！改为动态数组
+	//User users[userN];//！！！改为动态数组
+	User *U = new User[N];
+
 
 };

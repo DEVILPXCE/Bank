@@ -42,7 +42,9 @@ void Bank::login()
 
 	 while (!infile.eof())
 	 {
-		 //infile >> 
+		 infile >> acc;
+		 nm = infile.get();
+
 	 };
 
 
